@@ -113,10 +113,21 @@ _global_script_class_icons={
 config/name="Godot Template"
 run/main_scene="res://scenes/scene_manager.tscn"
 config/features=PackedStringArray("4.0", "Mobile")
+boot_splash/show_image=false
+boot_splash/bg_color=Color(0, 0, 0, 1)
 
 [autoload]
 
 GDShell="*res://addons/gdshell/scripts/gdshell_main.gd"
+
+[display]
+
+window/size/viewport_width=720
+window/size/viewport_height=1280
+window/size/mode=3
+window/handheld/orientation=1
+window/stretch/mode="viewport"
+window/stretch/aspect="keep_height"
 
 [editor_plugins]
 
@@ -130,6 +141,11 @@ gdshell_toggle_ui={
 ]
 }
 
+[physics]
+
+common/physics_ticks_per_second=30
+
 [rendering]
 
 renderer/rendering_method="mobile"
+environment/defaults/default_clear_color=Color(0.101961, 0.101961, 0.101961, 1)
