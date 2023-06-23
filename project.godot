@@ -1,0 +1,135 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+_global_script_classes=[{
+"base": "InputEventAction",
+"class": &"InputEventMultiScreenDrag",
+"language": &"GDScript",
+"path": "res://scripts/nodes/touch_input_manager/input_events/InputEventMultiScreenDrag.gd"
+}, {
+"base": "InputEventAction",
+"class": &"InputEventMultiScreenLongPress",
+"language": &"GDScript",
+"path": "res://scripts/nodes/touch_input_manager/input_events/InputEventMultiScreenLongPress.gd"
+}, {
+"base": "InputEventAction",
+"class": &"InputEventMultiScreenSwipe",
+"language": &"GDScript",
+"path": "res://scripts/nodes/touch_input_manager/input_events/InputEventMultiScreenSwipe.gd"
+}, {
+"base": "InputEventAction",
+"class": &"InputEventMultiScreenTap",
+"language": &"GDScript",
+"path": "res://scripts/nodes/touch_input_manager/input_events/InputEventMultiScreenTap.gd"
+}, {
+"base": "InputEventAction",
+"class": &"InputEventScreenCancel",
+"language": &"GDScript",
+"path": "res://scripts/nodes/touch_input_manager/input_events/InputEventScreenCancel.gd"
+}, {
+"base": "InputEventAction",
+"class": &"InputEventScreenPinch",
+"language": &"GDScript",
+"path": "res://scripts/nodes/touch_input_manager/input_events/InputEventScreenPinch.gd"
+}, {
+"base": "InputEventAction",
+"class": &"InputEventScreenTwist",
+"language": &"GDScript",
+"path": "res://scripts/nodes/touch_input_manager/input_events/InputEventScreenTwist.gd"
+}, {
+"base": "InputEventAction",
+"class": &"InputEventSingleScreenDrag",
+"language": &"GDScript",
+"path": "res://scripts/nodes/touch_input_manager/input_events/InputEventSingleScreenDrag.gd"
+}, {
+"base": "InputEventAction",
+"class": &"InputEventSingleScreenLongPress",
+"language": &"GDScript",
+"path": "res://scripts/nodes/touch_input_manager/input_events/InputEventSingleScreenLongPress.gd"
+}, {
+"base": "InputEventAction",
+"class": &"InputEventSingleScreenSwipe",
+"language": &"GDScript",
+"path": "res://scripts/nodes/touch_input_manager/input_events/InputEventSingleScreenSwipe.gd"
+}, {
+"base": "InputEventAction",
+"class": &"InputEventSingleScreenTap",
+"language": &"GDScript",
+"path": "res://scripts/nodes/touch_input_manager/input_events/InputEventSingleScreenTap.gd"
+}, {
+"base": "InputEventAction",
+"class": &"InputEventSingleScreenTouch",
+"language": &"GDScript",
+"path": "res://scripts/nodes/touch_input_manager/input_events/InputEventSingleScreenTouch.gd"
+}, {
+"base": "InputEventAction",
+"class": &"RawGesture",
+"language": &"GDScript",
+"path": "res://scripts/nodes/touch_input_manager/RawGesture.gd"
+}, {
+"base": "Sprite2D",
+"class": &"ScaledSprite",
+"language": &"GDScript",
+"path": "res://scripts/nodes/scaled_sprite.gd"
+}, {
+"base": "Node",
+"class": &"State",
+"language": &"GDScript",
+"path": "res://scripts/nodes/state.gd"
+}, {
+"base": "Node",
+"class": &"StateMachine",
+"language": &"GDScript",
+"path": "res://scripts/nodes/state_machine.gd"
+}]
+_global_script_class_icons={
+"InputEventMultiScreenDrag": "",
+"InputEventMultiScreenLongPress": "",
+"InputEventMultiScreenSwipe": "",
+"InputEventMultiScreenTap": "",
+"InputEventScreenCancel": "",
+"InputEventScreenPinch": "",
+"InputEventScreenTwist": "",
+"InputEventSingleScreenDrag": "",
+"InputEventSingleScreenLongPress": "",
+"InputEventSingleScreenSwipe": "",
+"InputEventSingleScreenTap": "",
+"InputEventSingleScreenTouch": "",
+"RawGesture": "",
+"ScaledSprite": "",
+"State": "",
+"StateMachine": ""
+}
+
+[application]
+
+config/name="Godot Template"
+run/main_scene="res://scenes/scene_manager.tscn"
+config/features=PackedStringArray("4.0", "Mobile")
+
+[autoload]
+
+GDShell="*res://addons/gdshell/scripts/gdshell_main.gd"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/copilot/plugin.cfg", "res://addons/SpritesheetGenerator/plugin.cfg")
+
+[input]
+
+gdshell_toggle_ui={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":96,"physical_keycode":0,"unicode":0,"echo":false,"script":null)
+]
+}
+
+[rendering]
+
+renderer/rendering_method="mobile"

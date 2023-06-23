@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://cmh8ri6u02iqv"]
+
+[ext_resource type="Script" path="res://scripts/scenes/dev_panel.gd" id="1_4rrwg"]
+
+[node name="dev_panel" type="CanvasLayer"]
+layer = 10
+script = ExtResource("1_4rrwg")
+
+[node name="container" type="VBoxContainer" parent="."]
+anchors_preset = 9
+anchor_bottom = 1.0
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="container"]
+offset_right = 1.0
+offset_bottom = 23.0
